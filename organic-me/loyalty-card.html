@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic ME</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            width: 100%;
+            height: 250px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <a href="index.html"><img style="width: 90px; height: 90px; float: left;" src="images/asset-2.png"
+                alt="coloured logo" />
+        </a>
+        <h1 style="font-style: italic; font-family: 'Playfair Display', serif; color: #F4F4DF;">Organic ME</h1>
+
+
+
+
+        <div id="nav">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="cafe.html">Cafe</a>
+                <a href="shop.html">Shop</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+
+        </div>
+
+    </div>
+    <main>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li class="item1 active"></li>
+                    <li class="item2"></li>
+                    <li class="item3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img src="images/honey.jpg" alt="Honey Pot" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3 style="font-family: Playfair Display;">Homemade Sweetness</h3>
+                            <a style="color: white; font-family: Open sans;" href="cafe.html" target="_blank">Come
+                                check out our homemade sweetness!</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/image10.jpg" alt="Plant" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3 style="font-family: Playfair Display;">Courses</h3>
+                            <a style="color: white; font-family: Open sans;" href="index.html" target="_blank">Come
+                                check out our gardening course.</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/image17.jpg" alt="Coconut Bowl" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3 style="font-family: Playfair Display;">Shop</h3>
+                            <a style="color: white; font-family: Open sans;" href="index.html" target="_blank">Come
+                                check out our homemade crafts.</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                // Activate Carousel
+                $("#myCarousel").carousel();
+
+                // Enable Carousel Indicators
+                $(".item1").click(function () {
+                    $("#myCarousel").carousel(0);
+                });
+                $(".item2").click(function () {
+                    $("#myCarousel").carousel(1);
+                });
+                $(".item3").click(function () {
+                    $("#myCarousel").carousel(2);
+                });
+
+
+                // Enable Carousel Controls
+                $(".left").click(function () {
+                    $("#myCarousel").carousel("prev");
+                });
+                $(".right").click(function () {
+                    $("#myCarousel").carousel("next");
+                });
+            });
+        </script>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h1 style="font-family: Playfair Display, serif;">Coffee Loyalty Card</h1>
+                    <h2 style="font-family: Playfair Display, serif;">We want to show our loyalty to you!</h2>
+                    <hr style="height: 2px; background-color: #00EB5F;">
+                    <p style="font-family: Open sans; font-size: large; text-align: justify;">And we can do that by
+                        providing all customers
+                        with a Coffee Loyalty Card that can be picked up in
+                        stores when you make your first purchase in our Cafe section. Afterwards whenever you again make
+                        a purchase in our Cafe section you will gain a stamp. Once you have collected 10 stamps you will
+                        then be entitled to a free coffee and muffin made homemade by our staff! But the fun doesn't
+                        stop there, you can continue this and gain another 10 stamps to yet again earn free goodies.
+                    </p>
+
+
+                    <img class="image-8" src="images/image29.jpg" alt="Photo by RODNAE Productions from Pexels">
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h4 style="font-family: 'Playfair Display', serif;"><img
+                            style="width: 25px; height: 25px; color: #F4F4DF; " src="images/alt-logo.png"
+                            alt="coloured sunflower">
+                        Organic ME</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul style="font-family: Open sans ;" class="list-unstyled">
+                                <li><a class="link" href="index.html">Home</a></li>
+                                <li><a class="link" href="loyalty-card.html">Loyalty Card</a></li>
+                                <li><a class="link" href="privacy-policy.html">Privacy Policy</a></li>
+
+                            </ul>
+                        </div>
+
+
+                        <div class="col-6">
+                            <ul style="font-family: Open sans ;" class="list-unstyled">
+                                <li><a href="https://en-gb.facebook.com/login.php"><img class="social-links"
+                                            src="images/facebook.png" alt="facebook logo"></a>
+                                </li>
+
+                                <li><a href="https://en-gb.facebook.com/login.php"><img class="social-links"
+                                            src="images/twitter.png" alt="facebook logo"></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-2">
+                    <h5 style="font-family: 'Playfair Display'; font-size: larger; color: #F4F4DF;"
+                        class="text-md-right">Contact Us
+                    </h5>
+                    <hr style="background-color: #ffffff;">
+
+                </div>
+                <div class="col-md-5">
+                    <form>
+                        <fieldset class="form-group">
+                            <input
+                                style="font-family:'Playfair Display', serif; background-color: #ffffff; color: #A9A4A4;"
+                                type="email" class="form-control" id="exampleInputEmail1"
+                                placeholder="Enter your email address..." required="">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <textarea
+                                style="font-family:'Playfair Display', serif;  font-style: normal; background-color: #ffffff; color: #A9A4A4;"
+                                class="form-control" id="exampleMessage" placeholder="Enter your message..."
+                                required=""></textarea>
+                        </fieldset>
+                        <fieldset class="form-group text-xs-right">
+                            <div class="text-center">
+
+                                <button style="border-radius: 25px;" onclick="contactForm()" type="submit"
+                                    class="btn btn btn-lg">Submit</button>
+                            </div>
+                        </fieldset>
+
+                        <script>
+                            function contactForm() {
+                                alert(
+                                    "Thank you for getting in contact, we will try to get back to you as soon as possible!"
+                                );
+                            }
+                        </script>
+                    </form>
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

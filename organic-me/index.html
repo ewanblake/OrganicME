@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic ME</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            width: 100%;
+            height: 350px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <div id="header">
+        <a href="index.html"><img style="width: 90px; height: 90px; float: left;" src="images/asset-2.png"
+                alt="coloured logo" />
+        </a>
+        <h1 style="font-style: italic; font-family: 'Playfair Display', serif; color: #F4F4DF;">Organic ME</h1>
+
+
+
+
+        <div id="nav">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="cafe.html">Cafe</a>
+                <a href="shop.html">Shop</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+
+        </div>
+
+    </div>
+
+
+
+    <main>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li class="item1 active"></li>
+                    <li class="item2"></li>
+                    <li class="item3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img src="images/honey.jpg" alt="Honey Pot" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3 style="font-family: Playfair Display;">Homemade Sweetness</h3>
+                            <a style="color: white; font-family: Open sans;" href="cafe.html" target="_blank">Come
+                                check out our homemade sweetness!</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/image10.jpg" alt="Plant" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3 style="font-family: Playfair Display;">Courses</h3>
+                            <a style="color: white; font-family: Open sans;" href="index.html" target="_blank">Come
+                                check out our gardening course.</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/image17.jpg" alt="Coconut Bowl" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3 style="font-family: Playfair Display;">Shop</h3>
+                            <a style="color: white; font-family: Open sans;" href="index.html" target="_blank">Come
+                                check out our homemade crafts.</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                // Activate Carousel
+                $("#myCarousel").carousel();
+
+                // Enable Carousel Indicators
+                $(".item1").click(function () {
+                    $("#myCarousel").carousel(0);
+                });
+                $(".item2").click(function () {
+                    $("#myCarousel").carousel(1);
+                });
+                $(".item3").click(function () {
+                    $("#myCarousel").carousel(2);
+                });
+
+
+                // Enable Carousel Controls
+                $(".left").click(function () {
+                    $("#myCarousel").carousel("prev");
+                });
+                $(".right").click(function () {
+                    $("#myCarousel").carousel("next");
+                });
+            });
+        </script>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 style="font-family: Playfair Display; font-weight: bold;">Why Go Organic?</h3>
+                    <hr style="background-color: #00EB5F; height: 2px;">
+                    <p style="font-family: Open sans; font-weight: 400; font-size: large;">Organic produce is becoming
+                        increasingly more accessible with greater consumer choice
+                        providing a healthy, traceable and sustainable alternative. There are many reasons why
+                        people choose to go organic; from concerns for their own health and the lives of the
+                        animals
+                        farmed, to a desire to look after the environment.</p>
+
+                </div>
+
+
+
+                <div class="col">
+                    <h4
+                        style="text-align: center; font-family: 'Playfair Display'; font-weight: bold; font-style: italic; top: 10%;">
+                        Monthly Events</h4>
+
+                    <img class="image" src="images/image3.jpg" alt="">
+                    <button onclick="document.location='monthly-events.html'" class="btn image-button">Check Out
+                        More</button>
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-3">
+            <div class="row">
+                <div class="col">
+
+
+                    <h3 style="font-family: 'Playfair Display'; font-weight: bold;">Who Benefits From It?</h3>
+                    <hr style="background-color: #00EB5F; height: 2px;">
+                    <p style="font-family: Open sans;font-weight: 400; font-size: large;">Quite simply everyone
+                        does, it can help
+                        reduce allergies
+                        in children, reducing obesity in
+                        adults. People who eat organically are usually associated with type 2 diabetes and
+                        reducing greenhouse gas emissions. Reduced exposure to pesticides through food, which
+                        can reduce risk of negative effects to children's cognitive development. Reduced risk of
+                        antibiotic resistance through organic farming practices, as organic animals are in some
+                        cases less likely to develop diseases related to intensive production. </p>
+
+                    <h4
+                        style="text-align: center; font-family: 'Playfair Display'; font-weight: bold; font-style: italic; margin-top: 100px;">
+                        Monthly Newsletter</h4>
+
+                    <img class="image-2" src="images/image7.jpg" alt="">
+                    <button onclick="document.location='newsletter.html'" class="btn image-button-2">Check Out
+                        More</button>
+
+                </div>
+
+                <div class="col">
+                    <blockquote class="twitter-tweet">
+                        <p lang="en" dir="ltr">And the best thing in the garden in 2021?<br>The food of course!
+                            🪴🌿🍎🥦🍒🫑🍊🥒🍓🍏🌶<br>There truly is nothing like the flavour of <a
+                                href="https://twitter.com/hashtag/homegrown?src=hash&amp;ref_src=twsrc%5Etfw">#homegrown</a>
+                            fruit &amp; veg.<br>Give it a go, it’s easier than you think!<a
+                                href="https://twitter.com/hashtag/gardening?src=hash&amp;ref_src=twsrc%5Etfw">#gardening</a>
+                            <a
+                                href="https://twitter.com/hashtag/MyGarden?src=hash&amp;ref_src=twsrc%5Etfw">#MyGarden</a>
+                            <a href="https://twitter.com/hashtag/gyo?src=hash&amp;ref_src=twsrc%5Etfw">#gyo</a>
+                            <a
+                                href="https://twitter.com/hashtag/KitchenGarden?src=hash&amp;ref_src=twsrc%5Etfw">#KitchenGarden</a>
+                            <a href="https://twitter.com/hashtag/gardens?src=hash&amp;ref_src=twsrc%5Etfw">#gardens</a>
+                            <a href="https://t.co/SnqYbhlIHh">pic.twitter.com/SnqYbhlIHh</a></p>&mdash; Walnut
+                        Kitchen Garden (@PollyGardener) <a
+                            href="https://twitter.com/PollyGardener/status/1477332134222307335?ref_src=twsrc%5Etfw">January
+                            1, 2022</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js"></script>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h4 style="font-family: 'Playfair Display', serif;"><img
+                            style="width: 25px; height: 25px; color: #F4F4DF; " src="images/alt-logo.png"
+                            alt="coloured sunflower">
+                        Organic ME</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul style="font-family: Open sans ;" class="list-unstyled">
+                                <li><a class="link" href="index.html">Home</a></li>
+                                <li><a class="link" href="loyalty-card.html">Loyalty Card</a></li>
+                                <li><a class="link" href="privacy-policy.html">Privacy Policy</a></li>
+
+                            </ul>
+                        </div>
+
+
+                        <div class="col-6">
+                            <ul style="font-family: Open sans ;" class="list-unstyled">
+                                <li><a href="https://en-gb.facebook.com/login.php"><img class="social-links"
+                                            src="images/facebook.png" alt="facebook logo"></a>
+                                </li>
+
+                                <li><a href="https://en-gb.facebook.com/login.php"><img class="social-links"
+                                            src="images/twitter.png" alt="facebook logo"></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-2">
+                    <h5 style="font-family: 'Playfair Display'; font-size: larger; color: #F4F4DF;"
+                        class="text-md-right">Contact Us
+                    </h5>
+                    <hr style="background-color: #ffffff;">
+
+                </div>
+                <div class="col-md-5">
+                    <form>
+                        <fieldset class="form-group">
+                            <input
+                                style="font-family:'Playfair Display', serif; background-color: #ffffff; color: #A9A4A4;"
+                                type="email" class="form-control" id="exampleInputEmail1"
+                                placeholder="Enter your email address..." required="">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <textarea
+                                style="font-family:'Playfair Display', serif;  font-style: normal; background-color: #ffffff; color: #A9A4A4;"
+                                class="form-control" id="exampleMessage" placeholder="Enter your message..."
+                                required=""></textarea>
+                        </fieldset>
+                        <fieldset class="form-group text-xs-right">
+                            <div class="text-center">
+
+                                <button style="border-radius: 25px;" onclick="contactForm()" type="submit"
+                                    class="btn btn btn-lg">Submit</button>
+                            </div>
+                        </fieldset>
+
+                        <script>
+                            function contactForm() {
+                                alert(
+                                    "Thank you for getting in contact, we will try to get back to you as soon as possible!"
+                                );
+                            }
+                        </script>
+                    </form>
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
